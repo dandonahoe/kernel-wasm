@@ -1,0 +1,9 @@
+(module
+  (func $my_wasm_function (param $a i32) (param $b i32) (result i32)
+    local.get $a         ;; Load the first parameter (like MOV a)
+    local.get $b         ;; Load the second parameter (like MOV b)
+    i32.add              ;; Add them (like ADD a, b)
+    return               ;; Return the result
+  )
+  (export "my_wasm_function" (func $my_wasm_function))
+)
