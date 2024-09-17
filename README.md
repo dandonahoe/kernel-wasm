@@ -11,9 +11,6 @@ rustup component add llvm-tools-preview
 
 rustup target add x86_64-unknown-none
 
-
-# rustup install nightly
-# rustup default nightly
 rustup override set nightly
 
 
