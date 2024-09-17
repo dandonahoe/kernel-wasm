@@ -1,0 +1,24 @@
+[package]
+name = "microkernel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# We'll use a minimal allocator for heap management
+spin = "0.9.4"
+bootloader = "0.10.2"
+
+[dependencies.core]
+optional = true
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[build-dependencies]
+bootimage = "0.10.2" # This helps us create bootable images
+
+[features]
+default = ["alloc"]
