@@ -4,8 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bootloader = "0.10.2"
-spin = "0.9.4"  # For synchronization and lock primitives
+bootloader = "0.11.7"  # Latest stable version of bootloader
+spin = "0.9.8"  # Synchronization primitives
+
 
 [build-dependencies]
 bootimage = "0.10.2"
