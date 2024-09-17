@@ -64,7 +64,9 @@ impl Writer {
         }
     }
 
-    fn new_line(&mut self) { /* scroll up logic */ }
+    fn new_line(&mut self) {
+        // Basic new line logic (can implement scrolling here)
+    }
 }
 
 impl fmt::Write for Writer {

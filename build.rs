@@ -1,3 +1,0 @@
-fn main() {
-    bootimage::build();
-}
